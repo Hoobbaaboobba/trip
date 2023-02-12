@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="splide/dist/css/splide.min.css">
+    <script type="text/javascript" src="splide/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>trips</title>
+</head>
+<body id="body">
+    <div class="container">
+        <ul class="header">
+            <li><a href="#"><img src="images/phone.svg" alt="">8 (495) 123-44-66</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="news.html">Новости дня</a></li>
+            <li><a href="#">Офисы</a></li>
+            <li><a href="index.html"><img src="images/logo.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/arrowdown.svg" alt="">Помощь</a></li>
+            <li><a href="countries.html"><img src="images/arrowdown.svg" alt="">Страны</a></li>
+            <li><a href="#"><img src="images/arrowdown.svg" alt="">Туристам</a></li>
+            <li><a href="contactUs.html"><img src="images/point.svg" alt="">Москва</a></li>
+            <li><a href="#" id="enter" class="enter">Войти</a></li>
+        </ul>
+        <ul class="mobile_header">
+            <li>
+                <a href="index.html"><img src="images/logo.svg" alt=""></a>
+            </li>
+            <li id="threelines">
+                <img src="images/threelines.svg" alt="">
+            </li>
+        </ul>
+        <div class="main_container">
+            <div class="main_text">
+                <h1>Наши лучшие туры</h1>
+            </div>
+            <div class="slider" id="desktopimage">
+                <img src="images/backimage.svg" alt="">
+            </div>
+            <div class="slider" id="mobilebackimage">
+                <img id="mobilebackimage" src="images/mobilebackimage.svg" alt="">
+            </div>
+        </div>
+        <div class="choice_container">
+            <h2>Подбор тура</h2>
+            <ul class="choice_input">
+                <li>
+                    <p>Откуда</p>
+                    <input type="text" placeholder="Выберите город...">
+                </li>
+                <li>
+                    <p>Куда</p>
+                    <input type="text" placeholder="Выберите страну...">
+                </li>
+                <li>
+                    <p>Дата вылета</p>
+                    <div class="input">
+                        <input type="text" placeholder="Выберите дату...">
+                        <img src="images/calendar.svg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <p>Количество ночей</p>
+                    <div class="input">
+                        <input type="text" placeholder="Выберите число...">
+                        <img src="images/arrowdown.svg" alt="">
+                    </div>
+                </li>
+                <li>
+                    <p>Туристы</p>
+                    <div class="input">
+                        <input type="text" placeholder="Выберите кол-во...">
+                        <img src="images/arrowdown.svg" alt="">
+                    </div>
+                </li>
+                <li id="search">
+                    Поиск
+                </li>
+            </ul>
+        </div>
+        <div class="offers_container">
+            <img src="images/text.svg" alt="">
+            <div class="offers_grid">
+                <div class="offer">
+                    <img src="images/egypt.svg" alt="">
+                    <button class="offer_button">Купить тур</button>
+                </div>
+                <div class="offer">
+                    <img src="images/russia.svg" alt="">
+                    <button class="offer_button">Купить тур</button>
+                </div>
+                <div class="offer">
+                    <img src="images/costarica.svg" alt="">
+                    <button class="offer_button">Купить тур</button>
+                </div>
+                <div class="offer">
+                    <img src="images/amirates.svg" alt="">
+                    <button class="offer_button">Купить тур</button>
+                </div>
+            </div>
+        </div>
+        <div class="news_container">
+            <h1>Новости</h1>
+            <div class="news">
+                <div class="news_text">
+                    <p>Посещение достопримечательностей Дубая в подарок от Emirates</p>
+                    <a href="news.html">Читать далее</a>
+                </div>
+                <p>Опубликовано: 20.01.2023</p>
+            </div>
+            <div class="news">
+                <div class="news_text">
+                    <p>В Дубае значительно снижены цены на алкоголь</p>
+                    <a href="news.html">Читать далее</a>
+                </div>
+                <p>Опубликовано: 10.01.2023</p>
+            </div>
+            <div class="news">
+                <div class="news_text">
+                    <p>Новый год 2023 в Шардже</p>
+                    <a href="news.html">Читать далее</a>
+                </div>
+                <p>Опубликовано: 19.12.2022</p>
+            </div>
+        </div>
+        <div class="best_offers_container">
+            <h1>Лучшие предложения для отдыха</h1>
+            <div class="best_offers_grid">
+                <div class="best_offer">
+                    <img src="images/secondegypt.svg" alt="">
+                </div>
+                <div class="best_offer">
+                    <img src="images/thailand.svg" alt="">
+                </div>
+                <div class="best_offer">
+                    <img src="images/maldives.svg" alt="">
+                </div>
+                <div class="best_offer">
+                    <img src="images/srilanka.svg" alt="">
+                </div>
+                <div class="best_offer">
+                    <img src="images/oae.svg" alt="">
+                </div>
+                <div class="best_offer">
+                    <img src="images/tunis.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <button id="showmore_button">Показать больше</button>
+        <div class="advantages_container">
+            <div class="advantages_grid">
+                <div class="advantage">
+                    <img src="images/firstadvantage.svg" alt="">
+                </div>
+                <div class="advantage">
+                    <img src="images/thirdadvantage.svg" alt="">
+                </div>
+                <div class="advantage">
+                    <img src="images/fifthadvantage.svg" alt="">
+                </div>
+                <div class="advantage">
+                    <img src="images/secondadvantage.svg" alt="">
+                </div>
+                <div class="advantage">
+                    <img src="images/fourthadvantage.svg" alt="">
+                </div>
+                <div class="advantage">
+                    <img src="images/sixthadvantage.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="request_container">
+            <h2>Остались вопросы или не смогли найти подходящую информацию?</h2>
+            <p>Заполните анкету и наш специалист свяжится с вами в течении 15 минут</p>
+            <div class="request">
+                <input type="text" placeholder="Введите имя...">
+                <input type="text" placeholder="Введите номер телефона...">
+                <input type="text" placeholder="Вкратце опишите проблему">
+                <button id="request_button">Отправить</button>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_block">
+                <img src="images/logo.svg" alt="">
+                <div class="exchange">
+                    <h3>Курс</h3>
+                    <div class="money">
+                         <p>USD</p>
+                         <p>70,12</p>
+                    </div>
+                    <div class="money">
+                        <p>EURO</p>
+                        <p>76,22</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_block" id="laws">
+                <p>© Е. С. Киселева, 2023. Все права защищены</p>
+            </div>
+            <div class="footer_block">
+                <div class="block">
+                    <p>vokrygsveta24@gmail.com</p>
+                    <div class="phone_number">
+                        <img src="images/phone.svg" alt="">
+                        <p> 8 (495) 123-44-66</p>
+                    </div>
+                    <p>Главный офис продаж</p>
+                    <p>Авиамоторная улица, 53к30</p>
+                </div>
+                <div class="block_grid">
+                    <img src="images/youtube.svg" alt="">
+                    <img src="images/instagram.svg" alt="">
+                    <img src="images/vk.svg" alt="">
+                    <img src="images/telegram.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="open_enter_container" id="open_enter_container">
+        <div class="open_enter">
+            <h2>Войти</h2>
+            <div class="enter_input_container">
+                <p>Email</p>
+                <div class="enter_input">
+                    <img src="images/mail.svg" alt="">
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+            </div>
+            <div class="enter_input_container">
+                <p>Пароль</p>
+                <div class="enter_input_password">
+                    <input type="text" placeholder="*********">
+                </div>
+            </div>
+            <a href="#">Забыли пароль?</a>
+            <a href="personinfo.html" style="color: white;"><button id="enter_button">Войти</button></a>
+            <img src="images/or.svg" alt="">
+            <ul class="join_in">
+                <li><a href="#"><img src="images/google.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/apple.svg" alt=""></a></li>
+            </ul>
+            <div class="sign_in">
+                <p>У вас нет аккаунта?</p>
+                <a href="">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+    var splide = new Splide( '.splide' );
+    splide.mount();
+</script>
+<script>
+    const body = document.getElementById('body');
+    const enter = document.getElementById('open_enter_container');
+
+    document.getElementById('enter').onclick = function()
+    {
+        enter.style.display = 'flex';
+        body.style.overflowY = 'hidden'
+    }
+
+    document.onclick = function(e){
+        if(e.target.id === 'open_enter_container')
+        {
+            enter.style.display = 'none';
+            body.style.overflowY = 'auto'
+        }
+    }
+</script>
+</body>
+</html>

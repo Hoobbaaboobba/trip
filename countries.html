@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul class="header">
+            <li><a href="#"><img src="images/phone.svg" alt="">8 (495) 123-44-66</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="news.html">Новости дня</a></li>
+            <li><a href="#">Офисы</a></li>
+            <li><a href="index.html"><img src="images/logo.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/arrowdown.svg" alt="">Помощь</a></li>
+            <li><a href="countries.html"><img src="images/arrowdown.svg" alt="">Страны</a></li>
+            <li><a href="#"><img src="images/arrowdown.svg" alt="">Туристам</a></li>
+            <li><a href="contactUs.html"><img src="images/point.svg" alt="">Москва</a></li>
+            <li><a href="#" id="enter" class="enter">Войти</a></li>
+        </ul>
+        <div class="countries_container">
+            <img src="images/turkeylogo.svg" alt="">
+            <img src="images/egyptlogo.svg" alt="">
+            <img src="images/thailandlogo.svg" alt="">
+            <img src="images/russialogo.svg" alt="">
+            <img src="images/maldiveslogo.svg" alt="">
+            <img src="images/brazillogo.svg" alt="">
+            <img src="images/srilankalogo.svg" alt="">
+        </div>
+    </div>
+    <div class="open_enter_container" id="open_enter_container">
+        <div class="open_enter">
+            <h2>Войти</h2>
+            <div class="enter_input_container">
+                <p>Email</p>
+                <div class="enter_input">
+                    <img src="images/mail.svg" alt="">
+                    <input type="text" placeholder="example@gmail.com">
+                </div>
+            </div>
+            <div class="enter_input_container">
+                <p>Пароль</p>
+                <div class="enter_input_password">
+                    <input type="text" placeholder="*********">
+                </div>
+            </div>
+            <a href="#">Забыли пароль?</a>
+            <a href="personinfo.html" style="color: white;"><button id="enter_button">Войти</button></a>
+            <img src="images/or.svg" alt="">
+            <ul class="join_in">
+                <li><a href="#"><img src="images/google.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="images/apple.svg" alt=""></a></li>
+            </ul>
+            <div class="sign_in">
+                <p>У вас нет аккаунта?</p>
+                <a href="">Зарегистрироваться</a>
+            </div>
+        </div>
+    </div>
+
+<script>
+    var splide = new Splide( '.splide' );
+    splide.mount();
+</script>
+<script>
+    const enter = document.getElementById('open_enter_container');
+
+    document.getElementById('enter').onclick = function()
+    {
+        enter.style.display = 'flex';
+    }
+
+    document.onclick = function(e){
+        if(e.target.id === 'open_enter_container')
+        {
+            enter.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
