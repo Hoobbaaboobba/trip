@@ -11,24 +11,24 @@
     <title>trips</title>
 </head>
 <body id="body">
-    <div class="container">
+    <div class="container" id="container">
         <ul class="header">
             <li><a href="#"><img src="images/phone.svg" alt="">8 (495) 123-44-66</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="news.html">Новости дня</a></li>
-            <li><a href="#">Офисы</a></li>
+            <li><a href="offices.html">Офисы</a></li>
             <li><a href="index.html"><img src="images/logo.svg" alt=""></a></li>
             <li><a href="#"><img src="images/arrowdown.svg" alt="">Помощь</a></li>
             <li><a href="countries.html"><img src="images/arrowdown.svg" alt="">Страны</a></li>
-            <li><a href="#"><img src="images/arrowdown.svg" alt="">Туристам</a></li>
-            <li><a href="contactUs.html"><img src="images/point.svg" alt="">Москва</a></li>
+            <li><a href="offers.html"><img src="images/arrowdown.svg" alt="">Туристам</a></li>
+            <li><a href="#"><img src="images/point.svg" alt="">Москва</a></li>
             <li><a href="#" id="enter" class="enter">Войти</a></li>
         </ul>
         <ul class="mobile_header">
             <li>
                 <a href="index.html"><img src="images/logo.svg" alt=""></a>
             </li>
-            <li id="threelines">
+            <li id="threelines" >
                 <img src="images/threelines.svg" alt="">
             </li>
         </ul>
@@ -43,6 +43,18 @@
                 <img id="mobilebackimage" src="images/mobilebackimage.svg" alt="">
             </div>
         </div>
+        <!-- <div id="sidebar">
+            <ul>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="news.html">Новости дня</a></li>
+                <li><a href="#">Офисы</a></li>
+                <li><a href="#">Помощь</a></li>
+                <li><a href="countries.html">Страны</a></li>
+                <li> <a href="#">Туристам</a></li>
+                <li> <a href="contactUs.html">Москва</a></li>
+                <li> <a href="#" class="enter">Войти</a></li>
+            </ul>
+        </div> -->
         <div class="choice_container">
             <h2>Подбор тура</h2>
             <ul class="choice_input">
@@ -236,7 +248,7 @@
             </div>
             <a href="#">Забыли пароль?</a>
             <a href="personinfo.html" style="color: white;"><button id="enter_button">Войти</button></a>
-            <img src="images/or.svg" alt="">
+            <img id="or" src="images/or.svg" alt="">
             <ul class="join_in">
                 <li><a href="#"><img src="images/google.svg" alt=""></a></li>
                 <li><a href="#"><img src="images/facebook.svg" alt=""></a></li>
@@ -248,30 +260,42 @@
             </div>
         </div>
     </div>
-
-
+    <!-- <div id="backgroundoverlay"></div> -->
 
 <script>
-    var splide = new Splide( '.splide' );
-    splide.mount();
-</script>
-<script>
-    const body = document.getElementById('body');
     const enter = document.getElementById('open_enter_container');
 
     document.getElementById('enter').onclick = function()
     {
         enter.style.display = 'flex';
-        body.style.overflowY = 'hidden'
     }
 
     document.onclick = function(e){
         if(e.target.id === 'open_enter_container')
         {
             enter.style.display = 'none';
-            body.style.overflowY = 'auto'
         }
     }
+</script>
+<!-- <script>
+    const toggle = document.getElementById('threelines');
+    const sidebar = document.getElementById('sidebar');
+    var backgroundoverlay = document.getElementById('backgroundoverlay')
+
+    toggle.onclick = function()
+    {
+        sidebar.style.right = '0';
+        backgroundoverlay.style.display = 'flex'
+
+    }
+
+    document.onclick = function(e){
+        if(e.target.id === 'backgroundoverlay')
+        {
+            sidebar.style.right = '-300px'
+            backgroundoverlay.style.display = 'none'
+        }
+    } -->
 </script>
 </body>
 </html>
