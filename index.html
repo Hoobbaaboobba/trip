@@ -33,15 +33,15 @@
             </li>
         </ul>
         <div class="main_container">
-            <div class="main_text">
-                <h1>Наши лучшие туры</h1>
-            </div>
-            <div class="slider" id="desktopimage">
-                <img src="images/backimage.svg" alt="">
-            </div>
-            <div class="slider" id="mobilebackimage">
-                <img id="mobilebackimage" src="images/mobilebackimage.svg" alt="">
-            </div>
+            <section class="splide" role="group">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="images/backimage.svg" alt=""></li>
+                    <li class="splide__slide"><img src="images/backimage.svg" alt=""></li>
+                    <li class="splide__slide"><img src="images/backimage.svg" alt=""></li>
+                  </ul>
+                </div>
+            </section>
         </div>
         <!-- <div id="sidebar">
             <ul>
@@ -158,6 +158,36 @@
                 <div class="best_offer">
                     <img src="images/tunis.svg" alt="">
                 </div>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="carousel">
+              <div id="content">
+                <img
+                  class="item"
+                  src="images/secondegypt.svg"
+                />
+                <img
+                  src="images/thailand.svg"
+                  class="item"
+                />
+                <img
+                  src="images/maldives.svg"
+                  class="item"
+                />
+                <img
+                  src="images/srilanka.svg"
+                  class="item"
+                />
+                <img
+                  src="images/oae.svg"
+                  class="item"
+                />
+                <img
+                  src="images/tunis.svg"
+                  class="item"
+                />
+              </div>
             </div>
         </div>
         <button id="showmore_button">Показать больше</button>
@@ -296,6 +326,43 @@
             backgroundoverlay.style.display = 'none'
         }
     } -->
+</script>
+<script>
+    var splide = new Splide( '.splide' );
+    splide.mount();
+    var splide = new Splide( '.splide' );
+    splide.mount();
+</script>
+<script>
+const gap = 16;
+
+const carousel = document.getElementById("carousel"),
+  content = document.getElementById("content"),
+  next = document.getElementById("next"),
+  prev = document.getElementById("prev");
+
+next.addEventListener("click", e => {
+  carousel.scrollBy(width + gap, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.style.display = "flex";
+  }
+  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "none";
+  }
+});
+prev.addEventListener("click", e => {
+  carousel.scrollBy(-(width + gap), 0);
+  if (carousel.scrollLeft - width - gap <= 0) {
+    prev.style.display = "none";
+  }
+  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
+    next.style.display = "flex";
+  }
+});
+
+let width = carousel.offsetWidth;
+window.addEventListener("resize", e => (width = carousel.offsetWidth));
+
 </script>
 </body>
 </html>
